@@ -1,0 +1,12 @@
+<div class="flex-row">
+  <span>Click on card and add to decks</span>
+  <div>You have {{decksCount}} Decks</div>
+</div>
+<div class="container">
+  <div class="card" *ngFor="let card of decks">
+    <div class="card-title icon-{{card}}">{{card}}</div>
+    <div class="flex-row">
+      <button class="button" type="button" (click)="addCard(card)">+</button>
+    </div>
+  </div>
+</div>

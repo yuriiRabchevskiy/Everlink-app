@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="flex-row">
+    Your coins is: {{arr}}
+  </div>
+  <div class="form-group">
+    <label>Put Money</label>
+    <input class="form-control" type="number" step="0.1" [min]="pr.value" [(ngModel)]="money" name="mo" #mo="ngModel">
+  </div>
+  <div class="form-group">
+    <label>Put Price</label>
+    <input class="form-control" type="number" step="0.1" min="0" [max]="mo.value" [(ngModel)]="price" name="pr" #pr="ngModel">
+  </div>
+
+  <button class="btn btn-primary" type="button" (click)="getChange(money, price)">Get Change</button>
+</div>

@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'test-app';
+  pages: string[] = ['card', 'machine'];
+  selectedPage: string;
+  constructor() {
+  }
+
+  selectPage(page: string) {
+    this.selectedPage = page;
+  }
 }

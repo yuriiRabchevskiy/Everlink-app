@@ -1,0 +1,93 @@
+.container {
+    padding: 12px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 80vh;
+    overflow-y: auto;
+}
+.card {
+    display: inline-flex;
+    width: 100px;
+    height: 130px;
+    color: #cacaca;
+    background-color: #e26f2b;
+    margin: 12px;
+}
+.card:hover {
+    color: #fff;
+}
+.card-title {
+    font-size: 54px;
+    text-align: center;
+    margin-bottom: 12px;
+    background-image: url('/assets/suits.png');
+    background-size: cover;
+}
+
+.button {
+    width: 100%;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 6px;
+}
+
+.icon-2S,
+.icon-3S,
+.icon-4S,
+.icon-5S,
+.icon-6S,
+.icon-7S,
+.icon-8S,
+.icon-9S,
+.icon-TS,
+.icon-JS,
+.icon-QS,
+.icon-KS,
+.icon-AS {
+    background-position: 14px -1px;
+}
+.icon-2C,
+.icon-3C,
+.icon-4C,
+.icon-5C,
+.icon-6C,
+.icon-7C,
+.icon-8C,
+.icon-9C,
+.icon-TC,
+.icon-JC,
+.icon-QC,
+.icon-KC,
+.icon-AC {
+    background-position: -237px 0px;
+}
+.icon-2D,
+.icon-3D,
+.icon-4D,
+.icon-5D,
+.icon-6D,
+.icon-7D,
+.icon-8D,
+.icon-9D,
+.icon-TD,
+.icon-JD,
+.icon-QD,
+.icon-KD,
+.icon-AD {
+    background-position: -108px 0px;
+}
+.icon-2H,
+.icon-3H,
+.icon-4H,
+.icon-5H,
+.icon-6H,
+.icon-7H,
+.icon-8H,
+.icon-9H,
+.icon-TH,
+.icon-JH,
+.icon-QH,
+.icon-KH,
+.icon-AH {
+    background-position: -381px 0px;
+}
