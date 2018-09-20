@@ -1,4 +1,4 @@
-.container {
+.container-fluid {
     padding: 12px;
     flex-direction: row;
     flex-wrap: wrap;
@@ -10,8 +10,9 @@
     width: 100px;
     height: 130px;
     color: #cacaca;
-    background-color: #e26f2b;
+    background-color: #932be2;
     margin: 12px;
+    cursor: pointer;
 }
 .card:hover {
     color: #fff;
@@ -29,6 +30,7 @@
     font-size: 20px;
     font-weight: bold;
     border-radius: 6px;
+    cursor: pointer;
 }
 
 .icon-2S,

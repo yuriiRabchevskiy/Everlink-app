@@ -1,12 +1,13 @@
-<div class="flex-row">
-  <span>Click on card and add to decks</span>
-  <div>You have {{decksCount}} Decks</div>
+<div class="container flex-row">
+  <h2>You have <span class="badge" [ngClass]="{'badge-info': decksCount === 0, 'badge-success': decksCount > 0}">
+      {{decksCount}}</span> Decks</h2>
+  <h3>Click on card and add to decks</h3>
 </div>
-<div class="container">
-  <div class="card" *ngFor="let card of decks">
+<div class="container-fluid">
+  <div class="card" *ngFor="let card of decks" (click)="addCard(card)">
     <div class="card-title icon-{{card}}">{{card}}</div>
     <div class="flex-row">
-      <button class="button" type="button" (click)="addCard(card)">+</button>
+      <button class="button" type="button">+</button>
     </div>
   </div>
 </div>

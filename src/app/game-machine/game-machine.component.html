@@ -1,7 +1,22 @@
 <div class="container">
-  <div class="flex-row">
-    Your coins is: {{arr}}
-  </div>
+  <h2>You have received the following denomination coins:</h2>
+ <table class="table table-bordered table-dark">
+   <thead>
+     <tr>
+       <td>1c</td>
+       <td>5c</td>
+       <td>10c</td>
+       <td>25c</td>
+       <td>50c</td>
+       <td>1$</td>
+     </tr>
+   </thead>
+   <tbody>
+     <tr>
+        <td *ngFor="let i of arr" [ngClass]="{'bg-success': i > 0}">{{i}}</td>
+     </tr>
+   </tbody>
+ </table>
   <div class="form-group">
     <label>Put Money</label>
     <input class="form-control" type="number" step="0.1" [min]="pr.value" [(ngModel)]="money" name="mo" #mo="ngModel">
